@@ -14,7 +14,7 @@ function LinkList(props) {
     localStorage.setItem(link, false);
     setIsButtonEnabled(false);
     updateContent();
-    window.dispatchEvent(new Event("result_increase"));
+    window.dispatchEvent(new Event('result_increase'));
   };
 
   const updateContent = () => {

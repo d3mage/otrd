@@ -10,7 +10,7 @@ function Section({ props }) {
 
   let content;
 
-  if(isHidden) {
+  if (!isHidden) {
     content = props.content.map((link) => {
       return <LinkList key={link} link={link}></LinkList>;
     });
