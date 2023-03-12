@@ -2,7 +2,11 @@ import { useState } from 'react';
 import s from './Section.module.css';
 
 function LinkList(props) {
-  const [isButtonEnabled, setIsButtonEnabled] = useState(localStorage.getItem(props.link) === null ? true : localStorage.getItem(props.link));
+  const [isButtonEnabled, setIsButtonEnabled] = useState(
+    localStorage.getItem(props.link) === null
+      ? true
+      : localStorage.getItem(props.link),
+  );
   const link = props.link;
   let button;
 
@@ -18,7 +22,6 @@ function LinkList(props) {
       localStorage.setItem(link, true);
     }
     if (isButtonEnabled == true) {
-      console.log('enabled')
       button = (
         <button
           onClick={() => {
