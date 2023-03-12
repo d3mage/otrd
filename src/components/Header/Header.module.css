@@ -10,6 +10,9 @@ header {
   height: 50px;
   vertical-align: middle;
   padding-left: 100px;
+  justify-content: space-between;
+  display: f;
+
 }
 
 .title {
@@ -29,4 +32,23 @@ header {
   width: 38px;
   vertical-align: middle;
   margin-left: 20px;
+}
+
+
+.header_content{
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+}
+
+.developers{
+
+  display: flex;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+
+.developers label{
+  color: white;
+  display: block;
 }
