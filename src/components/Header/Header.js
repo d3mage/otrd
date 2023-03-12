@@ -11,9 +11,9 @@ function Header() {
 
   window.addEventListener('result_increase', () => {
     console.log('result_increase');
-    let temp = result;
-    setResult((temp += 5));
-    localStorage.setItem('result', result);
+    let temp = result + 5;
+    setResult((temp));
+    localStorage.setItem('result', temp);
   });
 
   return (
