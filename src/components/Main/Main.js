@@ -17,7 +17,6 @@ const data = [
       'https://github.com/CoinCulture/evm-tools',
       'https://www.evm.codes/playground?fork=merge',
       'https://degatchi.com/articles/reading-raw-evm-calldata/',
-      'https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy',
       'https://ardislu.dev/raw-bytecode-evm',
       'https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy',
       'https://ethereum.org/en/developers/tutorials/short-abi/',

@@ -117,3 +117,6 @@ p {
     box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px, rgb(195 231 202) 0px 0px 0px 3px;
 }
 
+ul {
+  list-style-type: none;
+}
