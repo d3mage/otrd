@@ -1,5 +1,6 @@
 import s from './Section.module.css';
 import { useState } from 'react';
+import LinkList from './LinkList';
 
 function Section({ props }) {
   const [isChecked, setIsChecked] = useState(false);
@@ -8,47 +9,9 @@ function Section({ props }) {
     setIsChecked(!isChecked);
   };
 
-  const buttonHandler = (link) => {
-    localStorage.setItem(link, true);
-    updateContent();
-  };
-
-  let content;
-  
-  const updateContent = () => {
-    console.log("updated")
-    if (isChecked) {
-      content = props.content.map((link) => {
-        let completed = localStorage.getItem(link);
-        let button;
-        if (completed === null) {
-          completed = 'false';
-          localStorage.setItem(link, false);
-        }
-        if (completed == 'false') {
-          button = (
-            <button
-              onClick={() => {
-                buttonHandler(link);
-              }}
-            >
-              Done
-            </button>
-          );
-        }
-        return (
-          <li key={link}>
-            <div className={s.links}>
-              <a href={link}>{link}</a>
-              {button}
-            </div>
-          </li>
-        );
-      });
-    }
-  }
-
-  updateContent();
+  let content = props.content.map((link) => {
+    return <LinkList key={link} link={link}></LinkList>;
+  });
 
   return (
     <div className={s.section}>
