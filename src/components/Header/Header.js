@@ -5,12 +5,12 @@ import {useState} from 'react';
 function Header() {
     const [result, setResult] = useState(localStorage.getItem('result') === null ? 0 : localStorage.getItem('result'),);
 
-    window.addEventListener('result_increase', () => {
-        console.log('result_increase');
-        let temp = result;
-        setResult((temp += 5));
-        localStorage.setItem('result', result);
-    });
+  window.addEventListener('result_increase', () => {
+    console.log('result_increase');
+    let temp = result + 5;
+    setResult((temp));
+    localStorage.setItem('result', temp);
+  });
 
     return (
         <header>
