@@ -9,8 +9,15 @@ function Section({ props }) {
   };
 
   let content;
+
+
   if (isChecked) {
-    content = <p>{props.content}</p>;
+    content = props.content.map((link) => (
+      <>
+        <h4>{link}</h4>
+        <button>Done</button>
+      </>
+    ));
   }
 
   return (
@@ -21,10 +28,6 @@ function Section({ props }) {
       </h2>
 
       {content}
-
-      <div className={s.text_wrapper}>
-        <p className={s.section_text}>asdasd</p>
-      </div>
     </div>
   );
 }

@@ -4,21 +4,32 @@ import Section from './Section/Section';
 const data = [
   {
     title: 'Start',
-    content: 'pragma specifies the compiler version of Solidity.',
+    content: [],
   },
   {
-    title: 'Variables',
-    content: 'There are 3 types of variables in Solidity',
+    title: 'EVM / Assembly',
+    content: [
+      'https://blog.openzeppelin.com/ethereum-in-depth-part-2-6339cf6bddb9/',
+      'https://blog.trustlook.com/understand-evm-bytecode-part-1/',
+      'https://12ft.io/proxy?q=https://jeancvllr.medium.com/solidity-tutorial-all-about-assembly-5acdfefde05c',
+      'https://ethereum.org/en/developers/tutorials/reverse-engineering-a-contract/',
+      'https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-vi-the-swarm-hash-70f069e22aef/',
+      'https://github.com/CoinCulture/evm-tools',
+      'https://www.evm.codes/playground?fork=merge',
+      'https://degatchi.com/articles/reading-raw-evm-calldata/',
+      'https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy',
+      'https://ardislu.dev/raw-bytecode-evm',
+      'https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy',
+      'https://ethereum.org/en/developers/tutorials/short-abi/',
+    ],
   },
   {
     title: 'Constants',
-    content:
-      'Constants are variables that cannot be modified.Their value is hard coded and using constants can save gas cost.',
+    content: [],
   },
   {
     title: 'Immutable',
-    content:
-      'Immutable variables are like constants. Values of immutable variables can be set inside the constructor but cannot be modified afterwards.',
+    content: [],
   },
 ];
 
