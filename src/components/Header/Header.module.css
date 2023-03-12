@@ -62,3 +62,9 @@ header {
   font-weight: 600;
   letter-spacing: 3px;
 }
+
+.result h3{
+
+  width: 200px;
+  text-align: center;
+}
