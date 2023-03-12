@@ -10,14 +10,14 @@ function Section({ props }) {
 
   let content;
   if (isChecked) {
-    content = <h4>{props.content}</h4>;
+    content = <p>{props.content}</p>;
   }
 
   return (
     <div className={s.section}>
       <h2 className={s.section_title}>
         <label>{props.title}</label>
-        <label onClick={checkHandler}>{isChecked ? 'less' : 'more'}</label>
+        <label onClick={checkHandler} className={s.btn}>{isChecked ? 'less' : 'more'}</label>
       </h2>
 
       {content}
